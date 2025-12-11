@@ -7,17 +7,19 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: '#0D0D0D', // Coal Black
-                'text-secondary': '#444444', // Deep Gray
-                accent: '#10B981', // Emerald Green
-                'accent-hover': '#0CA56F', // Emerald Hover
-                'bg-light': '#F8F9FA', // Light gray section
-                'bg-card': '#F3F4F6', // Card background
-                'border-gray': '#E5E7EB', // Border color
+                // Apple-inspired monochrome palette
+                primary: '#000000', // Pure Black
+                'primary-light': '#1D1D1F', // Charcoal (Apple's dark)
+                'text-secondary': '#86868B', // Medium Gray
+                'bg-light': '#F5F5F7', // Light Gray (Apple's light bg)
+                'bg-card': '#FBFBFD', // Ultra light gray
+                'border-gray': '#D2D2D7', // Soft border
+                accent: '#1D1D1F', // Apple Blue (minimal use)
+                'accent-hover': '#1D1D1F', // Slightly lighter blue
             },
             animation: {
-                'fade-in': 'fadeIn 0.5s ease-in',
-                'slide-up': 'slideUp 0.6s ease-out',
+                'fade-in': 'fadeIn 0.6s ease-out',
+                'slide-up': 'slideUp 0.8s ease-out',
                 'float': 'float 3s ease-in-out infinite',
             },
             keyframes: {
@@ -26,7 +28,7 @@ export default {
                     '100%': { opacity: '1' },
                 },
                 slideUp: {
-                    '0%': { transform: 'translateY(20px)', opacity: '0' },
+                    '0%': { transform: 'translateY(30px)', opacity: '0' },
                     '100%': { transform: 'translateY(0)', opacity: '1' },
                 },
                 float: {

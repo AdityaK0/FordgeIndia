@@ -8,6 +8,7 @@ import FestivalMarketing from './components/FestivalMarketing';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
+import Contact from './components/Contact';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
@@ -24,6 +25,7 @@ function App() {
         <Pricing />
         <Testimonials />
         <FAQ />
+        <Contact />
         <CTA />
       </main>
       <Footer />
