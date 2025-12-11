@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -43,14 +43,14 @@ const FAQ = () => {
     };
 
     return (
-        <section id="faq" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <section id="faq" className="py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
                         Frequently Asked Questions
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-lg text-text-secondary max-w-2xl mx-auto">
                         Got questions? We've got answers. Can't find what you're looking for? Contact our support team.
                     </p>
                 </div>
@@ -61,11 +61,11 @@ const FAQ = () => {
                         {faqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100"
+                                className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-border-gray"
                             >
                                 <button
                                     onClick={() => toggleFAQ(index)}
-                                    className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                                    className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-bg-light transition-colors"
                                 >
                                     <span className="text-lg font-semibold text-primary pr-8">
                                         {faq.question}
@@ -95,7 +95,7 @@ const FAQ = () => {
                                     className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                                         }`}
                                 >
-                                    <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                                    <div className="px-6 pb-5 text-text-secondary leading-relaxed">
                                         {faq.answer}
                                     </div>
                                 </div>
@@ -106,20 +106,20 @@ const FAQ = () => {
 
                 {/* Contact Support CTA */}
                 <div className="mt-16 text-center">
-                    <div className="inline-flex flex-col items-center gap-4 bg-white rounded-2xl p-8 shadow-lg">
-                        <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent-blue rounded-full flex items-center justify-center">
-                            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="inline-flex flex-col items-center gap-4 bg-white rounded-2xl p-8 shadow-md border border-border-gray">
+                        <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
+                            <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
                         </div>
                         <div>
                             <h3 className="text-xl font-bold text-primary mb-2">Still have questions?</h3>
-                            <p className="text-gray-600 mb-4">
+                            <p className="text-text-secondary mb-4">
                                 Our support team is here to help you get started.
                             </p>
                             <a
                                 href="#contact"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition-all duration-300 hover:scale-105"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent-hover transition-all duration-300 hover:scale-105"
                             >
                                 Contact Support
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,13 +1,14 @@
+import { useState, useEffect } from 'react';
 
 const FestivalMarketing = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const festivals = [
-        { name: 'Diwali', icon: '🪔', color: 'from-orange-500 to-yellow-500' },
-        { name: 'Holi', icon: '🎨', color: 'from-pink-500 to-purple-500' },
-        { name: 'Christmas', icon: '🎄', color: 'from-red-500 to-green-500' },
-        { name: 'Eid', icon: '🌙', color: 'from-teal-500 to-blue-500' },
-        { name: 'New Year', icon: '🎉', color: 'from-indigo-500 to-purple-500' },
+        { name: 'Diwali', icon: '🪔', color: 'bg-orange-500' },
+        { name: 'Holi', icon: '🎨', color: 'bg-pink-500' },
+        { name: 'Christmas', icon: '🎄', color: 'bg-red-500' },
+        { name: 'Eid', icon: '🌙', color: 'bg-teal-500' },
+        { name: 'New Year', icon: '🎉', color: 'bg-indigo-500' },
     ];
 
     useEffect(() => {
@@ -18,14 +19,14 @@ const FestivalMarketing = () => {
     }, []);
 
     return (
-        <section id="festival-marketing" className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+        <section id="festival-marketing" className="py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
                         Festival Marketing Made Easy
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-lg text-text-secondary max-w-2xl mx-auto">
                         Boost your sales during festivals with professionally designed poster templates.
                         Create, customize, and share in minutes.
                     </p>
@@ -36,48 +37,48 @@ const FestivalMarketing = () => {
                         {/* Left: Process Steps */}
                         <div className="space-y-6">
                             <div className="flex items-start gap-4 group">
-                                <div className="w-12 h-12 bg-gradient-to-br from-accent to-green-600 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 group-hover:scale-110 transition-transform">
+                                <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 group-hover:scale-110 transition-transform">
                                     1
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Admin Publishes Events</h3>
-                                    <p className="text-gray-600">
+                                    <p className="text-text-secondary">
                                         We publish official festival events like Diwali, Holi, Christmas, Eid, and more throughout the year.
                                     </p>
                                 </div>
                             </div>
 
                             <div className="flex items-start gap-4 group">
-                                <div className="w-12 h-12 bg-gradient-to-br from-accent-blue to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 group-hover:scale-110 transition-transform">
+                                <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 group-hover:scale-110 transition-transform">
                                     2
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Choose Poster Templates</h3>
-                                    <p className="text-gray-600">
+                                    <p className="text-text-secondary">
                                         Browse beautiful, professionally designed poster templates for each festival and select your favorite.
                                     </p>
                                 </div>
                             </div>
 
                             <div className="flex items-start gap-4 group">
-                                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 group-hover:scale-110 transition-transform">
+                                <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 group-hover:scale-110 transition-transform">
                                     3
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Customize & Edit Text</h3>
-                                    <p className="text-gray-600">
+                                    <p className="text-text-secondary">
                                         Add your business name, offers, and custom messages. Make it uniquely yours with our easy editor.
                                     </p>
                                 </div>
                             </div>
 
                             <div className="flex items-start gap-4 group">
-                                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 group-hover:scale-110 transition-transform">
+                                <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 group-hover:scale-110 transition-transform">
                                     4
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Download & Share</h3>
-                                    <p className="text-gray-600">
+                                    <p className="text-text-secondary">
                                         Download your poster and share it instantly via WhatsApp, Facebook, Instagram, or print it out.
                                     </p>
                                 </div>
@@ -87,7 +88,7 @@ const FestivalMarketing = () => {
                             <div className="pt-6">
                                 <a
                                     href="#pricing"
-                                    className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-accent to-accent-blue text-white rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-lg font-semibold hover:bg-accent-hover hover:shadow-xl transition-all duration-300 hover:scale-105"
                                 >
                                     Start Creating Posters
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,13 +101,12 @@ const FestivalMarketing = () => {
                         {/* Right: Animated Carousel */}
                         <div className="relative">
                             {/* Main Poster Display */}
-                            <div className="relative bg-white rounded-2xl shadow-2xl p-8 overflow-hidden">
-                                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-accent/10 to-transparent rounded-bl-full"></div>
-                                <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-accent-blue/10 to-transparent rounded-tr-full"></div>
+                            <div className="relative bg-white rounded-2xl shadow-xl p-8 overflow-hidden border border-border-gray">
+                                <div className="absolute top-0 right-0 w-40 h-40 bg-accent/5 rounded-bl-full"></div>
 
                                 <div className="relative z-10">
                                     {/* Poster Preview */}
-                                    <div className={`aspect-[3/4] rounded-xl bg-gradient-to-br ${festivals[currentSlide].color} p-8 flex flex-col items-center justify-center text-white transition-all duration-500`}>
+                                    <div className={`aspect-[3/4] rounded-xl ${festivals[currentSlide].color} p-8 flex flex-col items-center justify-center text-white transition-all duration-500`}>
                                         <div className="text-8xl mb-6 animate-float">
                                             {festivals[currentSlide].icon}
                                         </div>
@@ -139,13 +139,13 @@ const FestivalMarketing = () => {
 
                             {/* Floating Action Buttons */}
                             <div className="absolute -bottom-6 -right-6 flex gap-3">
-                                <div className="bg-white rounded-full p-4 shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
+                                <div className="bg-white rounded-full p-4 shadow-lg hover:shadow-xl transition-shadow cursor-pointer group border border-border-gray">
                                     <svg className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                                     </svg>
                                 </div>
-                                <div className="bg-white rounded-full p-4 shadow-lg hover:shadow-xl transition-shadow cursor-pointer group">
-                                    <svg className="w-6 h-6 text-green-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div className="bg-white rounded-full p-4 shadow-lg hover:shadow-xl transition-shadow cursor-pointer group border border-border-gray">
+                                    <svg className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                     </svg>
                                 </div>
@@ -162,7 +162,7 @@ const FestivalMarketing = () => {
                                 className={`cursor-pointer transition-all duration-300 ${index === currentSlide ? 'scale-125' : 'scale-100 opacity-50 hover:opacity-100'
                                     }`}
                             >
-                                <div className={`text-5xl p-4 rounded-2xl bg-gradient-to-br ${festival.color} bg-opacity-10`}>
+                                <div className={`text-5xl p-4 rounded-2xl ${festival.color} bg-opacity-10 border border-border-gray`}>
                                     {festival.icon}
                                 </div>
                             </div>

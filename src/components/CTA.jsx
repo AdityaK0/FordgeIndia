@@ -1,12 +1,11 @@
 
 const CTA = () => {
     return (
-        <section className="py-20 bg-gradient-to-br from-primary via-gray-900 to-primary relative overflow-hidden">
-            {/* Animated Background Elements */}
+        <section className="py-20 bg-primary relative overflow-hidden">
+            {/* Subtle Animated Background Elements */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-10 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-float"></div>
-                <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-blue/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+                <div className="absolute top-10 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-float"></div>
+                <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
             </div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -21,7 +20,7 @@ const CTA = () => {
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                         Ready to Grow Your Business?
                         <br />
-                        <span className="text-gradient bg-gradient-to-r from-accent to-accent-blue bg-clip-text text-transparent">
+                        <span className="text-accent">
                             Start with FordgeIndia Today
                         </span>
                     </h2>
@@ -35,7 +34,7 @@ const CTA = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                         <a
                             href="#pricing"
-                            className="group px-8 py-4 bg-gradient-to-r from-accent to-accent-blue text-white rounded-lg font-semibold text-lg shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105 flex items-center gap-2"
+                            className="group px-8 py-4 bg-accent text-white rounded-lg font-semibold text-lg shadow-2xl hover:shadow-accent/50 hover:bg-accent-hover transition-all duration-300 hover:scale-105 flex items-center gap-2"
                         >
                             Create Vendor Account
                             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
