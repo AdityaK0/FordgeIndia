@@ -2,22 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar */
+/* Minimal scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+  background: #E5E5E5;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #D0D0D0;
 }
 
 /* Smooth scroll */
@@ -28,6 +28,6 @@ html {
 /* Custom utilities */
 @layer utilities {
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply transition-all duration-500 hover:translate-y-[-2px];
   }
 }

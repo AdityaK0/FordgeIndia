@@ -7,20 +7,23 @@ export default {
     theme: {
         extend: {
             colors: {
-                // Apple-inspired monochrome palette
-                primary: '#000000', // Pure Black
-                'primary-light': '#1D1D1F', // Charcoal (Apple's dark)
-                'text-secondary': '#86868B', // Medium Gray
-                'bg-light': '#F5F5F7', // Light Gray (Apple's light bg)
-                'bg-card': '#FBFBFD', // Ultra light gray
-                'border-gray': '#D2D2D7', // Soft border
-                accent: '#1D1D1F', // Apple Blue (minimal use)
-                'accent-hover': '#1D1D1F', // Slightly lighter blue
+                // Ultra-minimal luxury palette
+                primary: '#111111', // Near black text
+                'text-secondary': '#555555', // Secondary text
+                'text-muted': '#888888', // Muted text
+                'bg-light': '#F7F7F7', // Soft gray background
+                'bg-card': '#F2F2F2', // Card gray
+                'border-gray': '#E5E5E5', // Divider gray
+                accent: '#0A84FF', // Minimal blue accent
+                'accent-hover': '#0066CC', // Hover blue
+            },
+            letterSpacing: {
+                'tighter': '-0.02em',
             },
             animation: {
-                'fade-in': 'fadeIn 0.6s ease-out',
-                'slide-up': 'slideUp 0.8s ease-out',
-                'float': 'float 3s ease-in-out infinite',
+                'fade-in': 'fadeIn 0.8s ease-out',
+                'slide-up': 'slideUp 1s ease-out',
+                'float': 'float 4s ease-in-out infinite',
             },
             keyframes: {
                 fadeIn: {
@@ -28,12 +31,12 @@ export default {
                     '100%': { opacity: '1' },
                 },
                 slideUp: {
-                    '0%': { transform: 'translateY(30px)', opacity: '0' },
+                    '0%': { transform: 'translateY(40px)', opacity: '0' },
                     '100%': { transform: 'translateY(0)', opacity: '1' },
                 },
                 float: {
                     '0%, 100%': { transform: 'translateY(0)' },
-                    '50%': { transform: 'translateY(-10px)' },
+                    '50%': { transform: 'translateY(-12px)' },
                 },
             },
         },
