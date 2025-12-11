@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 
 const FestivalMarketing = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
