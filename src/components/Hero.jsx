@@ -4,18 +4,20 @@ const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
             <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-                <div className="max-w-5xl mx-auto text-center animate-slide-up">
+                <div className="max-w-5xl mx-auto text-center animate-slide-up mt-20">
                     {/* Minimal Badge */}
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-bg-card rounded-full mb-12">
-                        <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-                        <span className="text-[13px] font-light text-text-secondary">Trusted by 500+ Local Businesses</span>
-                    </div>
+
 
                     {/* Ultra-Minimal Headline */}
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extralight tracking-tighter text-primary mb-8 leading-[1.1]">
                         Empowering Local Businesses to{' '}
                         <span className="font-light">Sell More</span>
                     </h1>
+
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-bg-card rounded-full mb-12">
+                        <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                        <span className="text-[13px] font-light text-text-secondary">Trusted by 500+ Local Businesses</span>
+                    </div>
 
                     {/* Subtext */}
                     <p className="text-[17px] sm:text-[19px] leading-relaxed text-text-secondary mb-12 max-w-3xl mx-auto font-light">
