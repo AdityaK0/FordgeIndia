@@ -23,7 +23,7 @@ function App() {
         <PortfolioPreview />
         <FestivalMarketing />
         <Pricing />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <FAQ />
         <Contact />
         <CTA />
