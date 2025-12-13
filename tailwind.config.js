@@ -14,8 +14,8 @@ export default {
                 'bg-light': '#F7F7F7', // Soft gray background
                 'bg-card': '#F2F2F2', // Card gray
                 'border-gray': '#E5E5E5', // Divider gray
-                accent: '#0A84FF', // Minimal blue accent
-                'accent-hover': '#0066CC', // Hover blue
+                accent: '#111111', // Minimal blue accent
+                'accent-hover': '#111111', // Hover blue
             },
             letterSpacing: {
                 'tighter': '-0.02em',

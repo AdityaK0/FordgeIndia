@@ -6,7 +6,7 @@ const FAQ = () => {
     const faqs = [
         {
             question: 'How do I publish my portfolio?',
-            answer: 'After signing up and completing your profile, your portfolio is automatically published at https://<your-business-name>.site.fordgeindia.online. You can customize it anytime from your dashboard and share the link with customers immediately.',
+            answer: 'After signing up and completing your profile, your portfolio is automatically published at https://<your-business-name>.fordgeindia.online. You can customize it anytime from your dashboard and share the link with customers immediately.',
         },
         {
             question: 'How do I add products to my portfolio?',
